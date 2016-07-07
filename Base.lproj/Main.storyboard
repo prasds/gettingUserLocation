@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gettingUserLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-w5-nv0">
+                                <rect key="frame" x="84" y="108" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhC-Vf-IUp">
+                                <rect key="frame" x="84" y="163" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnU-7m-FW6">
+                                <rect key="frame" x="191" y="108" width="186" height="21"/>
+                                <color key="backgroundColor" red="0.21615015801306553" green="0.80442162958115182" blue="0.30046086390552174" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="7JM-m0-gfe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-wu-0Qx">
+                                <rect key="frame" x="191" y="163" width="186" height="21"/>
+                                <color key="backgroundColor" red="0.21615015800000001" green="0.80442162959999997" blue="0.30046086389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoM-nm-k03">
+                                <rect key="frame" x="265" y="285" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eM1-Su-uIX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KoM-nm-k03" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1fK-tL-GZb"/>
+                            <constraint firstItem="jnU-7m-FW6" firstAttribute="leading" secondItem="uCI-wu-0Qx" secondAttribute="leading" id="AF8-PY-4RP"/>
+                            <constraint firstItem="jnU-7m-FW6" firstAttribute="trailing" secondItem="uCI-wu-0Qx" secondAttribute="trailing" id="Ikh-xZ-AQW"/>
+                            <constraint firstItem="cgX-w5-nv0" firstAttribute="leading" secondItem="QhC-Vf-IUp" secondAttribute="leading" id="Kx4-dk-dqr"/>
+                            <constraint firstItem="cgX-w5-nv0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="R1k-gh-k0K"/>
+                            <constraint firstItem="QhC-Vf-IUp" firstAttribute="baseline" secondItem="uCI-wu-0Qx" secondAttribute="baseline" id="RFN-0K-jSB"/>
+                            <constraint firstItem="uCI-wu-0Qx" firstAttribute="leading" secondItem="QhC-Vf-IUp" secondAttribute="trailing" constant="30" id="UVb-uk-c1u"/>
+                            <constraint firstItem="uCI-wu-0Qx" firstAttribute="centerX" secondItem="KoM-nm-k03" secondAttribute="centerX" id="UcE-vL-i7I"/>
+                            <constraint firstItem="cgX-w5-nv0" firstAttribute="baseline" secondItem="jnU-7m-FW6" secondAttribute="baseline" id="cfg-SJ-fdV"/>
+                            <constraint firstItem="QhC-Vf-IUp" firstAttribute="baseline" secondItem="uCI-wu-0Qx" secondAttribute="firstBaseline" id="ndV-7Y-db4"/>
+                            <constraint firstItem="cgX-w5-nv0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="qn1-iq-wxz"/>
+                            <constraint firstItem="QhC-Vf-IUp" firstAttribute="top" secondItem="cgX-w5-nv0" secondAttribute="bottom" constant="34" id="tJQ-1P-cUv"/>
+                            <constraint firstItem="cgX-w5-nv0" firstAttribute="baseline" secondItem="jnU-7m-FW6" secondAttribute="firstBaseline" id="x4W-Ca-Jnn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latitudeDisplay" destination="jnU-7m-FW6" id="ch1-1k-1iE"/>
+                        <outlet property="longitudeDisplay" destination="uCI-wu-0Qx" id="Kzq-N4-lHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="311"/>
+        </scene>
+    </scenes>
+</document>
